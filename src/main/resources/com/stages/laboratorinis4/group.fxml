@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stages.laboratorinis4.GroupController">
+   <children>
+      <TextField fx:id="firstNameField" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="120.0" promptText="First name" />
+      <TextField fx:id="lastNameField" layoutX="14.0" layoutY="47.0" prefHeight="25.0" prefWidth="120.0" promptText="Last name" />
+      <TextField fx:id="idField" layoutX="14.0" layoutY="79.0" prefHeight="25.0" prefWidth="120.0" promptText="ID" />
+      <Button fx:id="addButton" layoutX="14.0" layoutY="111.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="25.0" prefWidth="120.0" text="Add Student" />
+      <TableView fx:id="studentTable" editable="true" layoutX="148.0" layoutY="51.0" prefHeight="331.0" prefWidth="401.0" />
+      <Button fx:id="removeButton" layoutX="14.0" layoutY="144.0" mnemonicParsing="false" onAction="#removeStudent" prefHeight="25.0" prefWidth="120.0" text="Remove Student" />
+      <DatePicker fx:id="attendanceDate" layoutX="14.0" layoutY="198.0" prefHeight="25.0" prefWidth="120.0" />
+      <DatePicker fx:id="filterStartDate" layoutX="202.0" layoutY="14.0" prefHeight="25.0" prefWidth="137.0" />
+      <DatePicker fx:id="filterEndDate" layoutX="345.0" layoutY="14.0" prefHeight="25.0" prefWidth="137.0" />
+      <Button layoutX="14.0" layoutY="230.0" mnemonicParsing="false" onAction="#markAttendance" prefHeight="25.0" prefWidth="120.0" text="Attended" />
+      <Label fx:id="warningLabel" layoutX="14.0" layoutY="262.0" prefHeight="25.0" prefWidth="120.0" textAlignment="CENTER" />
+      <CheckBox fx:id="filterBox" layoutX="148.0" layoutY="18.0" mnemonicParsing="false" text="Filter" />
+      <Button layoutX="487.0" layoutY="14.0" mnemonicParsing="false" onAction="#filterStudents" prefHeight="25.0" prefWidth="62.0" text="Filter" />
+      <Button fx:id="pdfButton" layoutX="12.0" layoutY="356.0" mnemonicParsing="false" onAction="#exportToPdf" prefHeight="25.0" prefWidth="120.0" text="Export to PDF" />
+   </children>
+</AnchorPane>

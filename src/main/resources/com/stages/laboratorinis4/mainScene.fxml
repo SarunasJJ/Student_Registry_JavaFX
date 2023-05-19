@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stages.laboratorinis4.mainController">
+   <children>
+      <TextField fx:id="groupField" layoutX="15.0" layoutY="14.0" promptText="ex: Group 1" />
+      <Button fx:id="addGroupButton" layoutX="172.0" layoutY="14.0" mnemonicParsing="false" onAction="#addGroup" prefHeight="25.0" prefWidth="82.0" text="Add group" />
+      <Button layoutX="15.0" layoutY="327.0" mnemonicParsing="false" onAction="#importDataFromExcel" text="Import from excel" />
+      <Button layoutX="15.0" layoutY="360.0" mnemonicParsing="false" onAction="#exportDataToExcel" prefHeight="25.0" prefWidth="110.0" text="Export to excel" />
+      <Button layoutX="135.0" layoutY="327.0" mnemonicParsing="false" onAction="#importDataFromCSV" prefHeight="25.0" prefWidth="110.0" text="Import from csv" />
+      <Button layoutX="135.0" layoutY="360.0" mnemonicParsing="false" onAction="#exportDataToCSV" prefHeight="25.0" prefWidth="110.0" text="Export to csv" />
+      <TableView fx:id="groupsTable" layoutX="14.0" layoutY="47.0" prefHeight="270.0" prefWidth="312.0" />
+   </children>
+</AnchorPane>
